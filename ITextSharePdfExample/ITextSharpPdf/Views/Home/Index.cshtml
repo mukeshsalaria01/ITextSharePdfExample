@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                To learn How to generate pdf using asp.net mvc c# with ITextSharp.
+                If you have any questions about ASP.NET MVC with ITextSharp to generate pdf visit
+                <a href="http://www.learnsharecorner.com/" title="LearnShareCorner">My Blog</a>.
+            </p>
+        </div>
+    </section>
+}
+<h1>Click on below link to generate pdf and it will download automatically after download.</h1>
+@Html.ActionLink("Generate Pdf","GeneratePdf","Home",new{@style="font-size:17px"})
+
